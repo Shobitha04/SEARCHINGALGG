@@ -1,0 +1,51 @@
+/*here, if an element is present, return index of element. If there are many elements of same, return the multiple occurences of the element*/
+
+STEPS:
+1. Compute mid = [ (low+high)/2 ]
+2. return case 1: (arr[mid]==x)
+          case 2: (arr[mid]>x)
+          case 3: (arr[mid]<x)
+
+ex:  10 20 30 40 50 60 70
+     0   1  2  3  4  5  6
+     low                high
+         x=60(given)
+ mid = (0+6)/ 2 = 3
+   arr(3) = 40
+Now, 3 cases arise-                             0  1  2  3  4
+(we return mid)              case 1: (arr[mid]==x) x=30  10 20 30 40 50 ((0+4)/2) = 2->30
+ (repeat: high=mid-1)        case 2: (arr[mid]>x) x=10
+ (repeat: low=mid+1)         case 3: (arr[mid]<x) x=50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void BinarySearchh(int arr[], int n)
+{
+ int ele;
+ for(int i=0;i<=n;i++){
+  if(arr[i]==ele)
+    return arr[i];
+  for(int j=i+1;j<=n;i++)
+    if(arr[j]==else)
+      return j;
+  else
+    return -1;
+ System.out.println(arr[i],arr[j]);
+}
