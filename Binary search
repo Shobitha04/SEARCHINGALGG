@@ -17,6 +17,12 @@ Now, 3 cases arise-                             0  1  2  3  4
  (repeat: high=mid-1)        case 2: (arr[mid]>x) x=10
  (repeat: low=mid+1)         case 3: (arr[mid]<x) x=50
 
+so x is the target(number we have to search)
+We take low and high points for finding the middle element of array. Then we compare the middle of array with the target x.
+if they are equal then its found
+if the middle array element is greater than x, it means the target is present in right side of the middle element( ex. 10 20 30 40 50 target x= 15 here 30>15, so target element is present on right side of middle ele)
+Since ele is present b4 middle element, we take the high as mid-1.
+if middle array ele is lesser than x, it means target is present on higher side i.e left side of middle ele. So the low should be mid+1.
 
 
 
@@ -33,9 +39,7 @@ Now, 3 cases arise-                             0  1  2  3  4
 
 
 
-
-
-
+(my wrong code)
 void BinarySearchh(int arr[], int n)
 {
  int ele;
