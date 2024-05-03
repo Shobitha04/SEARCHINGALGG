@@ -25,8 +25,15 @@ Since ele is present b4 middle element, we take the high as mid-1.
 if middle array ele is lesser than x, it means target is present on higher side i.e left side of middle ele. So the low should be mid+1.
 
 
-
-
+l=0; h=n-1; int x=30
+while(l<=h)
+mid = (l + h)/2
+if(arr[mid]==x)
+return arr[mid];
+else if(arr[mid]>x)
+return high = mid - 1
+else
+ return low = mid + 1
 
 
 
